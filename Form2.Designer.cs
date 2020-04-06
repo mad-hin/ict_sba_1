@@ -68,6 +68,10 @@
 			this.answer_3 = new System.Windows.Forms.CheckBox();
 			this.answer_4 = new System.Windows.Forms.CheckBox();
 			this.q_text = new System.Windows.Forms.RichTextBox();
+			this.ans_1 = new System.Windows.Forms.RichTextBox();
+			this.ans_2 = new System.Windows.Forms.RichTextBox();
+			this.ans_3 = new System.Windows.Forms.RichTextBox();
+			this.ans_4 = new System.Windows.Forms.RichTextBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -447,6 +451,10 @@
 			this.tableLayoutPanel3.Controls.Add(this.answer_3, 0, 6);
 			this.tableLayoutPanel3.Controls.Add(this.answer_4, 0, 7);
 			this.tableLayoutPanel3.Controls.Add(this.q_text, 1, 3);
+			this.tableLayoutPanel3.Controls.Add(this.ans_1, 1, 4);
+			this.tableLayoutPanel3.Controls.Add(this.ans_2, 1, 5);
+			this.tableLayoutPanel3.Controls.Add(this.ans_3, 1, 6);
+			this.tableLayoutPanel3.Controls.Add(this.ans_4, 1, 7);
 			this.tableLayoutPanel3.Location = new System.Drawing.Point(591, 186);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
 			this.tableLayoutPanel3.RowCount = 9;
@@ -529,6 +537,38 @@
 			this.q_text.TabIndex = 14;
 			this.q_text.Text = "";
 			// 
+			// ans_1
+			// 
+			this.ans_1.Location = new System.Drawing.Point(198, 167);
+			this.ans_1.Name = "ans_1";
+			this.ans_1.Size = new System.Drawing.Size(189, 35);
+			this.ans_1.TabIndex = 15;
+			this.ans_1.Text = "";
+			// 
+			// ans_2
+			// 
+			this.ans_2.Location = new System.Drawing.Point(198, 208);
+			this.ans_2.Name = "ans_2";
+			this.ans_2.Size = new System.Drawing.Size(189, 35);
+			this.ans_2.TabIndex = 16;
+			this.ans_2.Text = "";
+			// 
+			// ans_3
+			// 
+			this.ans_3.Location = new System.Drawing.Point(198, 249);
+			this.ans_3.Name = "ans_3";
+			this.ans_3.Size = new System.Drawing.Size(189, 35);
+			this.ans_3.TabIndex = 17;
+			this.ans_3.Text = "";
+			// 
+			// ans_4
+			// 
+			this.ans_4.Location = new System.Drawing.Point(198, 290);
+			this.ans_4.Name = "ans_4";
+			this.ans_4.Size = new System.Drawing.Size(189, 35);
+			this.ans_4.TabIndex = 18;
+			this.ans_4.Text = "";
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -598,5 +638,9 @@
 		private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem createNewAccountToolStripMenuItem;
+		private System.Windows.Forms.RichTextBox ans_1;
+		private System.Windows.Forms.RichTextBox ans_2;
+		private System.Windows.Forms.RichTextBox ans_3;
+		private System.Windows.Forms.RichTextBox ans_4;
 	}
 }
