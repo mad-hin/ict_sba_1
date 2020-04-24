@@ -91,6 +91,7 @@ namespace ict_sba_1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
