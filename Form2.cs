@@ -16,7 +16,7 @@ namespace ict_sba_1
         ict_sba_1.Form1.user u;
         private OleDbConnection con = new OleDbConnection();
         public string s, connectionString;
-
+        
         public Form2(ict_sba_1.Form1.user user1)
         {
             InitializeComponent();
@@ -108,6 +108,12 @@ namespace ict_sba_1
         {
             Form0 form0 = new Form0();
             form0.ShowDialog();
+        }
+
+        private void newQuestionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel3.Visible = true;
+
         }
 
         private void pw_save_Click(object sender, EventArgs e)
