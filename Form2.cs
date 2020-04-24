@@ -113,7 +113,6 @@ namespace ict_sba_1
         private void newQuestionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tableLayoutPanel3.Visible = true;
-
         }
 
         private void pw_save_Click(object sender, EventArgs e)
