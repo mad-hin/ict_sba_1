@@ -16,7 +16,7 @@ namespace ict_sba_1
         ict_sba_1.Form1.user u;
         private OleDbConnection con = new OleDbConnection();
         public string s, connectionString;
-        
+
         public Form2(ict_sba_1.Form1.user user1)
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace ict_sba_1
         private void Form2_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            welcome.Text = "Welcome "+ u.username;
+            welcome.Text = "Welcome " + u.username;
             s = u.username;
             try
             {
@@ -126,7 +126,8 @@ namespace ict_sba_1
             {
                 MessageBox.Show("New password and Confirm not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if ( string.IsNullOrEmpty(text_opw.Text) || string.IsNullOrEmpty(text_pw1.Text) || string.IsNullOrEmpty(text_pw2.Text)){
+            else if (string.IsNullOrEmpty(text_opw.Text) || string.IsNullOrEmpty(text_pw1.Text) || string.IsNullOrEmpty(text_pw2.Text))
+            {
                 MessageBox.Show("Columns are not filled", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -136,7 +137,7 @@ namespace ict_sba_1
                     string find = "select count(*) from Table1 where username = " + " ? and[password] =? ";
                     using (OleDbCommand connect = new OleDbCommand())
                     {
-                        OleDbCommand command = new OleDbCommand(find,con);
+                        OleDbCommand command = new OleDbCommand(find, con);
                         con.Open();
                         command.Parameters.AddWithValue("@p1", u.username);
                         command.Parameters.AddWithValue("@p2", text_opw.Text);
