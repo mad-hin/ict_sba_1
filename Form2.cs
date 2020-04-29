@@ -61,7 +61,7 @@ namespace ict_sba_1
             tableLayoutPanel2.Location = new Point(ClientSize.Width / 2 - tableLayoutPanel2.Size.Width / 2, ClientSize.Height / 2 - tableLayoutPanel2.Size.Height / 2);
             editQuestionToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.E;
             newQuestionToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
-            tableLayoutPanel3.Visible = false;
+            QuestionInputTable.Visible = false;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -112,7 +112,9 @@ namespace ict_sba_1
 
         private void newQuestionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel3.Visible = true;
+            QuestionInputTable.Width = this.Width;
+            
+            QuestionInputTable.Visible = true;
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
