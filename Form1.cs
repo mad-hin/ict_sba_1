@@ -109,5 +109,10 @@ namespace ict_sba_1
         {
             student1.Checked = false;
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
