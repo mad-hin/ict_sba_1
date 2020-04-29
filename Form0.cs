@@ -108,5 +108,10 @@ namespace ict_sba_1
             this.WindowState = FormWindowState.Maximized;
             tableLayoutPanel1.Location = new Point(ClientSize.Width / 2 - tableLayoutPanel1.Size.Width / 2, ClientSize.Height / 2 - tableLayoutPanel1.Size.Height / 2);
         }
+
+        private void Form0_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
