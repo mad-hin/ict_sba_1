@@ -115,6 +115,11 @@ namespace ict_sba_1
             tableLayoutPanel3.Visible = true;
         }
 
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void pw_save_Click(object sender, EventArgs e)
         {
             if (text_pw1.Text != text_pw2.Text)
