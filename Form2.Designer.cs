@@ -72,7 +72,9 @@
 			this.ans_2 = new System.Windows.Forms.RichTextBox();
 			this.ans_3 = new System.Windows.Forms.RichTextBox();
 			this.ans_4 = new System.Windows.Forms.RichTextBox();
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+			this.Remarks = new System.Windows.Forms.RichTextBox();
+			this.QuestionInputClosebt = new System.Windows.Forms.Button();
+			this.QuestionInputSavebt = new System.Windows.Forms.Button();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -234,7 +236,7 @@
 			this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
 			this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
 			this.tableLayoutPanel2.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 635);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 693);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 4;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -343,14 +345,14 @@
 			// newQuestionToolStripMenuItem
 			// 
 			this.newQuestionToolStripMenuItem.Name = "newQuestionToolStripMenuItem";
-			this.newQuestionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+			this.newQuestionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.newQuestionToolStripMenuItem.Text = "New Question";
 			this.newQuestionToolStripMenuItem.Click += new System.EventHandler(this.newQuestionToolStripMenuItem_Click);
 			// 
 			// editQuestionToolStripMenuItem
 			// 
 			this.editQuestionToolStripMenuItem.Name = "editQuestionToolStripMenuItem";
-			this.editQuestionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+			this.editQuestionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.editQuestionToolStripMenuItem.Text = "Edit Question";
 			// 
 			// reportToolStripMenuItem
@@ -365,13 +367,13 @@
 			// teacherReportToolStripMenuItem
 			// 
 			this.teacherReportToolStripMenuItem.Name = "teacherReportToolStripMenuItem";
-			this.teacherReportToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+			this.teacherReportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.teacherReportToolStripMenuItem.Text = "Teacher Report";
 			// 
 			// studentReportToolStripMenuItem
 			// 
 			this.studentReportToolStripMenuItem.Name = "studentReportToolStripMenuItem";
-			this.studentReportToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+			this.studentReportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.studentReportToolStripMenuItem.Text = "Student Report";
 			// 
 			// logoutToolStripMenuItem
@@ -431,7 +433,7 @@
 			this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label7.Location = new System.Drawing.Point(18, 968);
+			this.label7.Location = new System.Drawing.Point(18, 971);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(117, 29);
 			this.label7.TabIndex = 8;
@@ -456,22 +458,25 @@
 			this.QuestionInputTable.Controls.Add(this.q_text, 1, 3);
 			this.QuestionInputTable.Controls.Add(this.ans_1, 1, 4);
 			this.QuestionInputTable.Controls.Add(this.ans_2, 1, 5);
-			this.QuestionInputTable.Controls.Add(this.ans_3, 1, 6);
 			this.QuestionInputTable.Controls.Add(this.ans_4, 1, 7);
-			this.QuestionInputTable.Controls.Add(this.richTextBox1, 1, 8);
+			this.QuestionInputTable.Controls.Add(this.Remarks, 1, 8);
+			this.QuestionInputTable.Controls.Add(this.QuestionInputClosebt, 0, 9);
+			this.QuestionInputTable.Controls.Add(this.QuestionInputSavebt, 1, 9);
+			this.QuestionInputTable.Controls.Add(this.ans_3, 1, 6);
 			this.QuestionInputTable.Location = new System.Drawing.Point(0, 154);
 			this.QuestionInputTable.Name = "QuestionInputTable";
-			this.QuestionInputTable.RowCount = 9;
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.QuestionInputTable.Size = new System.Drawing.Size(1355, 1044);
+			this.QuestionInputTable.RowCount = 10;
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.QuestionInputTable.Size = new System.Drawing.Size(1355, 1160);
 			this.QuestionInputTable.TabIndex = 9;
 			// 
 			// question
@@ -479,7 +484,7 @@
 			this.question.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.question.AutoSize = true;
 			this.question.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.question.Location = new System.Drawing.Point(16, 390);
+			this.question.Location = new System.Drawing.Point(16, 391);
 			this.question.Name = "question";
 			this.question.Size = new System.Drawing.Size(122, 29);
 			this.question.TabIndex = 9;
@@ -490,7 +495,7 @@
 			this.answer_1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_1.AutoSize = true;
 			this.answer_1.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_1.Location = new System.Drawing.Point(3, 503);
+			this.answer_1.Location = new System.Drawing.Point(3, 505);
 			this.answer_1.Name = "answer_1";
 			this.answer_1.Size = new System.Drawing.Size(148, 33);
 			this.answer_1.TabIndex = 10;
@@ -502,7 +507,7 @@
 			this.answer_2.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_2.AutoSize = true;
 			this.answer_2.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_2.Location = new System.Drawing.Point(3, 618);
+			this.answer_2.Location = new System.Drawing.Point(3, 621);
 			this.answer_2.Name = "answer_2";
 			this.answer_2.Size = new System.Drawing.Size(148, 33);
 			this.answer_2.TabIndex = 11;
@@ -514,7 +519,7 @@
 			this.answer_3.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_3.AutoSize = true;
 			this.answer_3.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_3.Location = new System.Drawing.Point(3, 733);
+			this.answer_3.Location = new System.Drawing.Point(3, 737);
 			this.answer_3.Name = "answer_3";
 			this.answer_3.Size = new System.Drawing.Size(148, 33);
 			this.answer_3.TabIndex = 12;
@@ -526,7 +531,7 @@
 			this.answer_4.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_4.AutoSize = true;
 			this.answer_4.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_4.Location = new System.Drawing.Point(3, 848);
+			this.answer_4.Location = new System.Drawing.Point(3, 853);
 			this.answer_4.Name = "answer_4";
 			this.answer_4.Size = new System.Drawing.Size(148, 33);
 			this.answer_4.TabIndex = 13;
@@ -535,7 +540,7 @@
 			// 
 			// q_text
 			// 
-			this.q_text.Location = new System.Drawing.Point(157, 350);
+			this.q_text.Location = new System.Drawing.Point(157, 351);
 			this.q_text.Name = "q_text";
 			this.q_text.Size = new System.Drawing.Size(612, 41);
 			this.q_text.TabIndex = 14;
@@ -543,7 +548,7 @@
 			// 
 			// ans_1
 			// 
-			this.ans_1.Location = new System.Drawing.Point(157, 465);
+			this.ans_1.Location = new System.Drawing.Point(157, 467);
 			this.ans_1.Name = "ans_1";
 			this.ans_1.Size = new System.Drawing.Size(612, 84);
 			this.ans_1.TabIndex = 15;
@@ -551,7 +556,7 @@
 			// 
 			// ans_2
 			// 
-			this.ans_2.Location = new System.Drawing.Point(157, 580);
+			this.ans_2.Location = new System.Drawing.Point(157, 583);
 			this.ans_2.Name = "ans_2";
 			this.ans_2.Size = new System.Drawing.Size(612, 102);
 			this.ans_2.TabIndex = 16;
@@ -559,7 +564,7 @@
 			// 
 			// ans_3
 			// 
-			this.ans_3.Location = new System.Drawing.Point(157, 695);
+			this.ans_3.Location = new System.Drawing.Point(157, 699);
 			this.ans_3.Name = "ans_3";
 			this.ans_3.Size = new System.Drawing.Size(657, 68);
 			this.ans_3.TabIndex = 17;
@@ -567,19 +572,40 @@
 			// 
 			// ans_4
 			// 
-			this.ans_4.Location = new System.Drawing.Point(157, 810);
+			this.ans_4.Location = new System.Drawing.Point(157, 815);
 			this.ans_4.Name = "ans_4";
 			this.ans_4.Size = new System.Drawing.Size(625, 84);
 			this.ans_4.TabIndex = 18;
 			this.ans_4.Text = "";
 			// 
-			// richTextBox1
+			// Remarks
 			// 
-			this.richTextBox1.Location = new System.Drawing.Point(157, 925);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(612, 110);
-			this.richTextBox1.TabIndex = 19;
-			this.richTextBox1.Text = "";
+			this.Remarks.Location = new System.Drawing.Point(157, 931);
+			this.Remarks.Name = "Remarks";
+			this.Remarks.Size = new System.Drawing.Size(612, 110);
+			this.Remarks.TabIndex = 19;
+			this.Remarks.Text = "";
+			// 
+			// QuestionInputClosebt
+			// 
+			this.QuestionInputClosebt.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.QuestionInputClosebt.Location = new System.Drawing.Point(3, 1047);
+			this.QuestionInputClosebt.Name = "QuestionInputClosebt";
+			this.QuestionInputClosebt.Size = new System.Drawing.Size(148, 57);
+			this.QuestionInputClosebt.TabIndex = 20;
+			this.QuestionInputClosebt.Text = "Close";
+			this.QuestionInputClosebt.UseVisualStyleBackColor = true;
+			this.QuestionInputClosebt.Click += new System.EventHandler(this.QuestionInputClosebt_Click);
+			// 
+			// QuestionInputSavebt
+			// 
+			this.QuestionInputSavebt.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.QuestionInputSavebt.Location = new System.Drawing.Point(157, 1047);
+			this.QuestionInputSavebt.Name = "QuestionInputSavebt";
+			this.QuestionInputSavebt.Size = new System.Drawing.Size(148, 57);
+			this.QuestionInputSavebt.TabIndex = 21;
+			this.QuestionInputSavebt.Text = "Save";
+			this.QuestionInputSavebt.UseVisualStyleBackColor = true;
 			// 
 			// Form2
 			// 
@@ -656,6 +682,8 @@
 		private System.Windows.Forms.RichTextBox ans_2;
 		private System.Windows.Forms.RichTextBox ans_3;
 		private System.Windows.Forms.RichTextBox ans_4;
-		private System.Windows.Forms.RichTextBox richTextBox1;
+		private System.Windows.Forms.RichTextBox Remarks;
+		private System.Windows.Forms.Button QuestionInputClosebt;
+		private System.Windows.Forms.Button QuestionInputSavebt;
 	}
 }
