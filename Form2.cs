@@ -101,6 +101,7 @@ namespace ict_sba_1
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            QuestionInputTable.Visible = false;
             tableLayoutPanel2.Visible = true;
         }
 
@@ -112,8 +113,22 @@ namespace ict_sba_1
 
         private void newQuestionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuestionInputTable.Width = this.Width;
-            
+            tableLayoutPanel2.Visible = false;
+            QuestionInputTable.Width = this.Width - 3 * SystemInformation.VerticalScrollBarWidth;
+            TableLayoutPanelCellPosition pos = QuestionInputTable.GetCellPosition(q_text);
+            TableLayoutPanelCellPosition pos1 = QuestionInputTable.GetCellPosition(question);
+            int width = QuestionInputTable.GetColumnWidths()[pos.Column];
+            int height = QuestionInputTable.GetRowHeights()[pos.Row];
+            q_text.Width = width;
+            q_text.Height = height;
+            ans_1.Width = width;
+            ans_1.Height = height;
+            ans_2.Width = width;
+            ans_2.Height = height;
+            ans_3.Width = width;
+            ans_3.Height = height;
+            ans_4.Width = width;
+            ans_4.Height = height;
             QuestionInputTable.Visible = true;
         }
 
