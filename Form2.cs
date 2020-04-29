@@ -113,23 +113,7 @@ namespace ict_sba_1
 
         private void newQuestionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel2.Visible = false;
-            QuestionInputTable.Width = this.Width - 3 * SystemInformation.VerticalScrollBarWidth;
-            TableLayoutPanelCellPosition pos = QuestionInputTable.GetCellPosition(q_text);
-            TableLayoutPanelCellPosition pos1 = QuestionInputTable.GetCellPosition(question);
-            int width = QuestionInputTable.GetColumnWidths()[pos.Column];
-            int height = QuestionInputTable.GetRowHeights()[pos.Row];
-            q_text.Width = width;
-            q_text.Height = height;
-            ans_1.Width = width;
-            ans_1.Height = height;
-            ans_2.Width = width;
-            ans_2.Height = height;
-            ans_3.Width = width;
-            ans_3.Height = height;
-            ans_4.Width = width;
-            ans_4.Height = height;
-            QuestionInputTable.Visible = true;
+            InitInputqtTable();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -137,12 +121,13 @@ namespace ict_sba_1
             Application.Exit();
         }
 
+        /*confirm closing the new question input table*/
         private void QuestionInputClosebt_Click(object sender, EventArgs e)
         {
             if(!(String.IsNullOrEmpty(q_text.Text)|| String.IsNullOrEmpty(ans_1.Text) || String.IsNullOrEmpty(ans_2.Text) 
                 || String.IsNullOrEmpty(ans_3.Text) || String.IsNullOrEmpty(ans_4.Text) || String.IsNullOrEmpty(Remarks.Text)))
             {
-                if(MessageBox.Show("The system will not save any changes", "Confirme to leave", MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                if(MessageBox.Show("The system will not save any changes", "Confirme to close", MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     q_text.Text = "";
                     ans_1.Text = "";
@@ -155,6 +140,7 @@ namespace ict_sba_1
             }
         }
 
+        /*Save password*/
         private void pw_save_Click(object sender, EventArgs e)
         {
             if (text_pw1.Text != text_pw2.Text)
@@ -207,6 +193,33 @@ namespace ict_sba_1
 
             }
 
+        }
+        
+        private void InitInputqtTable()
+        {
+            tableLayoutPanel2.Visible = false;
+            QuestionInputTable.Width = this.Width - 3 * SystemInformation.VerticalScrollBarWidth;
+            TableLayoutPanelCellPosition pos = QuestionInputTable.GetCellPosition(q_text);
+            TableLayoutPanelCellPosition pos1 = QuestionInputTable.GetCellPosition(question);
+            int width = QuestionInputTable.GetColumnWidths()[pos.Column];
+            int height = QuestionInputTable.GetRowHeights()[pos.Row];
+            q_text.Width = width;
+            q_text.Height = height;
+            ans_1.Width = width;
+            ans_1.Height = height;
+            ans_2.Width = width;
+            ans_2.Height = height;
+            ans_3.Width = width;
+            ans_3.Height = height;
+            ans_4.Width = width;
+            ans_4.Height = height;
+            q_text.Text = "";
+            ans_1.Text = "";
+            ans_2.Text = "";
+            ans_3.Text = "";
+            ans_4.Text = "";
+            Remarks.Text = "";
+            QuestionInputTable.Visible = true;
         }
     }
 }
