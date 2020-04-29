@@ -61,7 +61,7 @@
 			this.topic = new System.Windows.Forms.Label();
 			this.level = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
-			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+			this.QuestionInputTable = new System.Windows.Forms.TableLayoutPanel();
 			this.question = new System.Windows.Forms.Label();
 			this.answer_1 = new System.Windows.Forms.CheckBox();
 			this.answer_2 = new System.Windows.Forms.CheckBox();
@@ -76,7 +76,7 @@
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
-			this.tableLayoutPanel3.SuspendLayout();
+			this.QuestionInputTable.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// welcome
@@ -234,7 +234,7 @@
 			this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
 			this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
 			this.tableLayoutPanel2.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 720);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 635);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 4;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -437,42 +437,42 @@
 			this.label7.TabIndex = 8;
 			this.label7.Text = "Remarks";
 			// 
-			// tableLayoutPanel3
+			// QuestionInputTable
 			// 
-			this.tableLayoutPanel3.AutoSize = true;
-			this.tableLayoutPanel3.ColumnCount = 2;
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel3.Controls.Add(this.subject1, 1, 0);
-			this.tableLayoutPanel3.Controls.Add(this.label7, 0, 8);
-			this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
-			this.tableLayoutPanel3.Controls.Add(this.level, 0, 2);
-			this.tableLayoutPanel3.Controls.Add(this.topic, 0, 1);
-			this.tableLayoutPanel3.Controls.Add(this.question, 0, 3);
-			this.tableLayoutPanel3.Controls.Add(this.answer_1, 0, 4);
-			this.tableLayoutPanel3.Controls.Add(this.answer_2, 0, 5);
-			this.tableLayoutPanel3.Controls.Add(this.answer_3, 0, 6);
-			this.tableLayoutPanel3.Controls.Add(this.answer_4, 0, 7);
-			this.tableLayoutPanel3.Controls.Add(this.q_text, 1, 3);
-			this.tableLayoutPanel3.Controls.Add(this.ans_1, 1, 4);
-			this.tableLayoutPanel3.Controls.Add(this.ans_2, 1, 5);
-			this.tableLayoutPanel3.Controls.Add(this.ans_3, 1, 6);
-			this.tableLayoutPanel3.Controls.Add(this.ans_4, 1, 7);
-			this.tableLayoutPanel3.Controls.Add(this.richTextBox1, 1, 8);
-			this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 154);
-			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-			this.tableLayoutPanel3.RowCount = 9;
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(1355, 1044);
-			this.tableLayoutPanel3.TabIndex = 9;
+			this.QuestionInputTable.AutoSize = true;
+			this.QuestionInputTable.ColumnCount = 2;
+			this.QuestionInputTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.QuestionInputTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.QuestionInputTable.Controls.Add(this.subject1, 1, 0);
+			this.QuestionInputTable.Controls.Add(this.label7, 0, 8);
+			this.QuestionInputTable.Controls.Add(this.label1, 0, 0);
+			this.QuestionInputTable.Controls.Add(this.level, 0, 2);
+			this.QuestionInputTable.Controls.Add(this.topic, 0, 1);
+			this.QuestionInputTable.Controls.Add(this.question, 0, 3);
+			this.QuestionInputTable.Controls.Add(this.answer_1, 0, 4);
+			this.QuestionInputTable.Controls.Add(this.answer_2, 0, 5);
+			this.QuestionInputTable.Controls.Add(this.answer_3, 0, 6);
+			this.QuestionInputTable.Controls.Add(this.answer_4, 0, 7);
+			this.QuestionInputTable.Controls.Add(this.q_text, 1, 3);
+			this.QuestionInputTable.Controls.Add(this.ans_1, 1, 4);
+			this.QuestionInputTable.Controls.Add(this.ans_2, 1, 5);
+			this.QuestionInputTable.Controls.Add(this.ans_3, 1, 6);
+			this.QuestionInputTable.Controls.Add(this.ans_4, 1, 7);
+			this.QuestionInputTable.Controls.Add(this.richTextBox1, 1, 8);
+			this.QuestionInputTable.Location = new System.Drawing.Point(0, 154);
+			this.QuestionInputTable.Name = "QuestionInputTable";
+			this.QuestionInputTable.RowCount = 9;
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+			this.QuestionInputTable.Size = new System.Drawing.Size(1355, 1044);
+			this.QuestionInputTable.TabIndex = 9;
 			// 
 			// question
 			// 
@@ -586,8 +586,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1355, 647);
-			this.Controls.Add(this.tableLayoutPanel3);
+			this.ClientSize = new System.Drawing.Size(1346, 647);
+			this.Controls.Add(this.QuestionInputTable);
 			this.Controls.Add(this.tableLayoutPanel2);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.welcome);
@@ -603,8 +603,8 @@
 			this.tableLayoutPanel2.PerformLayout();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
-			this.tableLayoutPanel3.ResumeLayout(false);
-			this.tableLayoutPanel3.PerformLayout();
+			this.QuestionInputTable.ResumeLayout(false);
+			this.QuestionInputTable.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -642,7 +642,7 @@
         private System.Windows.Forms.Label topic;
         private System.Windows.Forms.Label level;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel QuestionInputTable;
         private System.Windows.Forms.Label question;
         private System.Windows.Forms.CheckBox answer_1;
         private System.Windows.Forms.CheckBox answer_2;
