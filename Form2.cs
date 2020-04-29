@@ -213,6 +213,8 @@ namespace ict_sba_1
             ans_3.Height = height;
             ans_4.Width = width;
             ans_4.Height = height;
+            Remarks.Width = width;
+            Remarks.Height = height;
             q_text.Text = "";
             ans_1.Text = "";
             ans_2.Text = "";
