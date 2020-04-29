@@ -25,7 +25,7 @@ namespace ict_sba_1
 
         private void title_Click(object sender, EventArgs e)
         {
-           
+
         }
         private void login_Click(object sender, EventArgs e)
         {
