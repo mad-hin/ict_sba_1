@@ -93,7 +93,7 @@ namespace ict_sba_1
                     command.Parameters.AddWithValue("password", text_password.Text);
                     command.Parameters.AddWithValue("Class", text_class.Text);
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Account created", "Congratulations",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Account created", "Congratulations", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     con.Close();
                 }
                 catch (Exception expect)
