@@ -137,6 +137,24 @@ namespace ict_sba_1
             Application.Exit();
         }
 
+        private void QuestionInputClosebt_Click(object sender, EventArgs e)
+        {
+            if(!(String.IsNullOrEmpty(q_text.Text)|| String.IsNullOrEmpty(ans_1.Text) || String.IsNullOrEmpty(ans_2.Text) 
+                || String.IsNullOrEmpty(ans_3.Text) || String.IsNullOrEmpty(ans_4.Text) || String.IsNullOrEmpty(Remarks.Text)))
+            {
+                if(MessageBox.Show("The system will not save any changes", "Confirme to leave", MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    q_text.Text = "";
+                    ans_1.Text = "";
+                    ans_2.Text = "";
+                    ans_3.Text = "";
+                    ans_4.Text = "";
+                    Remarks.Text = "";
+                    QuestionInputTable.Visible = false;
+                }
+            }
+        }
+
         private void pw_save_Click(object sender, EventArgs e)
         {
             if (text_pw1.Text != text_pw2.Text)
