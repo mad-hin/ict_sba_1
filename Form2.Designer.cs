@@ -234,7 +234,7 @@
 			this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
 			this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
 			this.tableLayoutPanel2.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 444);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 720);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 4;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -343,7 +343,7 @@
 			// newQuestionToolStripMenuItem
 			// 
 			this.newQuestionToolStripMenuItem.Name = "newQuestionToolStripMenuItem";
-			this.newQuestionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.newQuestionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
 			this.newQuestionToolStripMenuItem.Text = "New Question";
 			this.newQuestionToolStripMenuItem.Click += new System.EventHandler(this.newQuestionToolStripMenuItem_Click);
 			// 
@@ -587,7 +587,6 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1355, 647);
-			this.ControlBox = false;
 			this.Controls.Add(this.tableLayoutPanel3);
 			this.Controls.Add(this.tableLayoutPanel2);
 			this.Controls.Add(this.tableLayoutPanel1);
