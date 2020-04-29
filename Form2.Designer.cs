@@ -95,7 +95,7 @@
 			this.subject1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.subject1.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.subject1.FormattingEnabled = true;
-			this.subject1.Location = new System.Drawing.Point(946, 3);
+			this.subject1.Location = new System.Drawing.Point(685, 3);
 			this.subject1.Name = "subject1";
 			this.subject1.Size = new System.Drawing.Size(139, 24);
 			this.subject1.TabIndex = 1;
@@ -106,7 +106,7 @@
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label1.Location = new System.Drawing.Point(287, 43);
+			this.label1.Location = new System.Drawing.Point(25, 43);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(103, 29);
 			this.label1.TabIndex = 2;
@@ -409,7 +409,7 @@
 			this.topic.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.topic.AutoSize = true;
 			this.topic.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.topic.Location = new System.Drawing.Point(297, 159);
+			this.topic.Location = new System.Drawing.Point(35, 159);
 			this.topic.Name = "topic";
 			this.topic.Size = new System.Drawing.Size(83, 29);
 			this.topic.TabIndex = 6;
@@ -420,7 +420,7 @@
 			this.level.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.level.AutoSize = true;
 			this.level.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.level.Location = new System.Drawing.Point(298, 275);
+			this.level.Location = new System.Drawing.Point(36, 275);
 			this.level.Name = "level";
 			this.level.Size = new System.Drawing.Size(81, 29);
 			this.level.TabIndex = 7;
@@ -431,7 +431,7 @@
 			this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label7.Location = new System.Drawing.Point(280, 968);
+			this.label7.Location = new System.Drawing.Point(18, 968);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(117, 29);
 			this.label7.TabIndex = 8;
@@ -441,8 +441,8 @@
 			// 
 			this.QuestionInputTable.AutoSize = true;
 			this.QuestionInputTable.ColumnCount = 2;
-			this.QuestionInputTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.QuestionInputTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.QuestionInputTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+			this.QuestionInputTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
 			this.QuestionInputTable.Controls.Add(this.subject1, 1, 0);
 			this.QuestionInputTable.Controls.Add(this.label7, 0, 8);
 			this.QuestionInputTable.Controls.Add(this.label1, 0, 0);
@@ -479,7 +479,7 @@
 			this.question.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.question.AutoSize = true;
 			this.question.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.question.Location = new System.Drawing.Point(277, 390);
+			this.question.Location = new System.Drawing.Point(16, 390);
 			this.question.Name = "question";
 			this.question.Size = new System.Drawing.Size(122, 29);
 			this.question.TabIndex = 9;
@@ -490,7 +490,7 @@
 			this.answer_1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_1.AutoSize = true;
 			this.answer_1.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_1.Location = new System.Drawing.Point(264, 503);
+			this.answer_1.Location = new System.Drawing.Point(3, 503);
 			this.answer_1.Name = "answer_1";
 			this.answer_1.Size = new System.Drawing.Size(148, 33);
 			this.answer_1.TabIndex = 10;
@@ -502,7 +502,7 @@
 			this.answer_2.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_2.AutoSize = true;
 			this.answer_2.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_2.Location = new System.Drawing.Point(264, 618);
+			this.answer_2.Location = new System.Drawing.Point(3, 618);
 			this.answer_2.Name = "answer_2";
 			this.answer_2.Size = new System.Drawing.Size(148, 33);
 			this.answer_2.TabIndex = 11;
@@ -514,7 +514,7 @@
 			this.answer_3.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_3.AutoSize = true;
 			this.answer_3.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_3.Location = new System.Drawing.Point(264, 733);
+			this.answer_3.Location = new System.Drawing.Point(3, 733);
 			this.answer_3.Name = "answer_3";
 			this.answer_3.Size = new System.Drawing.Size(148, 33);
 			this.answer_3.TabIndex = 12;
@@ -526,7 +526,7 @@
 			this.answer_4.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.answer_4.AutoSize = true;
 			this.answer_4.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.answer_4.Location = new System.Drawing.Point(264, 848);
+			this.answer_4.Location = new System.Drawing.Point(3, 848);
 			this.answer_4.Name = "answer_4";
 			this.answer_4.Size = new System.Drawing.Size(148, 33);
 			this.answer_4.TabIndex = 13;
@@ -535,7 +535,7 @@
 			// 
 			// q_text
 			// 
-			this.q_text.Location = new System.Drawing.Point(680, 350);
+			this.q_text.Location = new System.Drawing.Point(157, 350);
 			this.q_text.Name = "q_text";
 			this.q_text.Size = new System.Drawing.Size(612, 41);
 			this.q_text.TabIndex = 14;
@@ -543,7 +543,7 @@
 			// 
 			// ans_1
 			// 
-			this.ans_1.Location = new System.Drawing.Point(680, 465);
+			this.ans_1.Location = new System.Drawing.Point(157, 465);
 			this.ans_1.Name = "ans_1";
 			this.ans_1.Size = new System.Drawing.Size(612, 84);
 			this.ans_1.TabIndex = 15;
@@ -551,7 +551,7 @@
 			// 
 			// ans_2
 			// 
-			this.ans_2.Location = new System.Drawing.Point(680, 580);
+			this.ans_2.Location = new System.Drawing.Point(157, 580);
 			this.ans_2.Name = "ans_2";
 			this.ans_2.Size = new System.Drawing.Size(612, 102);
 			this.ans_2.TabIndex = 16;
@@ -559,7 +559,7 @@
 			// 
 			// ans_3
 			// 
-			this.ans_3.Location = new System.Drawing.Point(680, 695);
+			this.ans_3.Location = new System.Drawing.Point(157, 695);
 			this.ans_3.Name = "ans_3";
 			this.ans_3.Size = new System.Drawing.Size(657, 68);
 			this.ans_3.TabIndex = 17;
@@ -567,7 +567,7 @@
 			// 
 			// ans_4
 			// 
-			this.ans_4.Location = new System.Drawing.Point(680, 810);
+			this.ans_4.Location = new System.Drawing.Point(157, 810);
 			this.ans_4.Name = "ans_4";
 			this.ans_4.Size = new System.Drawing.Size(625, 84);
 			this.ans_4.TabIndex = 18;
@@ -575,7 +575,7 @@
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.Location = new System.Drawing.Point(680, 925);
+			this.richTextBox1.Location = new System.Drawing.Point(157, 925);
 			this.richTextBox1.Name = "richTextBox1";
 			this.richTextBox1.Size = new System.Drawing.Size(612, 110);
 			this.richTextBox1.TabIndex = 19;
