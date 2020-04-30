@@ -31,13 +31,6 @@
 			this.welcome = new System.Windows.Forms.Label();
 			this.subject1 = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-			this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-			this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-			this.linkLabel6 = new System.Windows.Forms.LinkLabel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
 			this.text_pw2 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
@@ -75,10 +68,17 @@
 			this.QuestionInputClosebt = new System.Windows.Forms.Button();
 			this.QuestionInputSavebt = new System.Windows.Forms.Button();
 			this.ans_3 = new System.Windows.Forms.RichTextBox();
-			this.tableLayoutPanel1.SuspendLayout();
+			this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			this.QuestionInputTable.SuspendLayout();
+			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// welcome
@@ -113,112 +113,6 @@
 			this.label1.Size = new System.Drawing.Size(103, 29);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "Subject";
-			// 
-			// tableLayoutPanel1
-			// 
-			this.tableLayoutPanel1.ColumnCount = 7;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 1, 0);
-			this.tableLayoutPanel1.Controls.Add(this.linkLabel3, 6, 0);
-			this.tableLayoutPanel1.Controls.Add(this.linkLabel5, 5, 0);
-			this.tableLayoutPanel1.Controls.Add(this.linkLabel2, 4, 0);
-			this.tableLayoutPanel1.Controls.Add(this.linkLabel4, 3, 0);
-			this.tableLayoutPanel1.Controls.Add(this.linkLabel6, 2, 0);
-			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 71);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 2;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.23656F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.76344F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(1355, 85);
-			this.tableLayoutPanel1.TabIndex = 3;
-			// 
-			// linkLabel1
-			// 
-			this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.linkLabel1.AutoSize = true;
-			this.linkLabel1.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-			this.linkLabel1.Location = new System.Drawing.Point(236, 3);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(106, 32);
-			this.linkLabel1.TabIndex = 6;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "Setting";
-			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-			// 
-			// linkLabel3
-			// 
-			this.linkLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.linkLabel3.AutoSize = true;
-			this.linkLabel3.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.linkLabel3.LinkColor = System.Drawing.Color.Black;
-			this.linkLabel3.Location = new System.Drawing.Point(1193, 0);
-			this.linkLabel3.Name = "linkLabel3";
-			this.linkLabel3.Size = new System.Drawing.Size(126, 39);
-			this.linkLabel3.TabIndex = 5;
-			this.linkLabel3.TabStop = true;
-			this.linkLabel3.Text = "Create Accounts";
-			this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-			// 
-			// linkLabel5
-			// 
-			this.linkLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.linkLabel5.AutoSize = true;
-			this.linkLabel5.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.linkLabel5.LinkColor = System.Drawing.Color.Black;
-			this.linkLabel5.Location = new System.Drawing.Point(994, 0);
-			this.linkLabel5.Name = "linkLabel5";
-			this.linkLabel5.Size = new System.Drawing.Size(134, 39);
-			this.linkLabel5.TabIndex = 4;
-			this.linkLabel5.TabStop = true;
-			this.linkLabel5.Text = "Edit Questions";
-			// 
-			// linkLabel2
-			// 
-			this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.linkLabel2.AutoSize = true;
-			this.linkLabel2.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-			this.linkLabel2.Location = new System.Drawing.Point(801, 0);
-			this.linkLabel2.Name = "linkLabel2";
-			this.linkLabel2.Size = new System.Drawing.Size(134, 39);
-			this.linkLabel2.TabIndex = 4;
-			this.linkLabel2.TabStop = true;
-			this.linkLabel2.Text = "Make Questions";
-			// 
-			// linkLabel4
-			// 
-			this.linkLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.linkLabel4.AutoSize = true;
-			this.linkLabel4.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.linkLabel4.LinkColor = System.Drawing.Color.Black;
-			this.linkLabel4.Location = new System.Drawing.Point(625, 5);
-			this.linkLabel4.Name = "linkLabel4";
-			this.linkLabel4.Size = new System.Drawing.Size(100, 29);
-			this.linkLabel4.TabIndex = 7;
-			this.linkLabel4.TabStop = true;
-			this.linkLabel4.Text = "Logout";
-			this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
-			// 
-			// linkLabel6
-			// 
-			this.linkLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.linkLabel6.AutoSize = true;
-			this.linkLabel6.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.linkLabel6.LinkColor = System.Drawing.Color.Black;
-			this.linkLabel6.Location = new System.Drawing.Point(431, 3);
-			this.linkLabel6.Name = "linkLabel6";
-			this.linkLabel6.Size = new System.Drawing.Size(102, 32);
-			this.linkLabel6.TabIndex = 4;
-			this.linkLabel6.TabStop = true;
-			this.linkLabel6.Text = "Report";
 			// 
 			// tableLayoutPanel2
 			// 
@@ -607,6 +501,112 @@
 			this.ans_3.TabIndex = 17;
 			this.ans_3.Text = "";
 			// 
+			// linkLabel6
+			// 
+			this.linkLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.linkLabel6.AutoSize = true;
+			this.linkLabel6.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.linkLabel6.LinkColor = System.Drawing.Color.Black;
+			this.linkLabel6.Location = new System.Drawing.Point(431, 3);
+			this.linkLabel6.Name = "linkLabel6";
+			this.linkLabel6.Size = new System.Drawing.Size(102, 32);
+			this.linkLabel6.TabIndex = 4;
+			this.linkLabel6.TabStop = true;
+			this.linkLabel6.Text = "Report";
+			// 
+			// linkLabel4
+			// 
+			this.linkLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.linkLabel4.AutoSize = true;
+			this.linkLabel4.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.linkLabel4.LinkColor = System.Drawing.Color.Black;
+			this.linkLabel4.Location = new System.Drawing.Point(625, 5);
+			this.linkLabel4.Name = "linkLabel4";
+			this.linkLabel4.Size = new System.Drawing.Size(100, 29);
+			this.linkLabel4.TabIndex = 7;
+			this.linkLabel4.TabStop = true;
+			this.linkLabel4.Text = "Logout";
+			this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+			// 
+			// linkLabel2
+			// 
+			this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.linkLabel2.AutoSize = true;
+			this.linkLabel2.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.linkLabel2.LinkColor = System.Drawing.Color.Black;
+			this.linkLabel2.Location = new System.Drawing.Point(801, 0);
+			this.linkLabel2.Name = "linkLabel2";
+			this.linkLabel2.Size = new System.Drawing.Size(134, 39);
+			this.linkLabel2.TabIndex = 4;
+			this.linkLabel2.TabStop = true;
+			this.linkLabel2.Text = "Make Questions";
+			// 
+			// linkLabel5
+			// 
+			this.linkLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.linkLabel5.AutoSize = true;
+			this.linkLabel5.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.linkLabel5.LinkColor = System.Drawing.Color.Black;
+			this.linkLabel5.Location = new System.Drawing.Point(994, 0);
+			this.linkLabel5.Name = "linkLabel5";
+			this.linkLabel5.Size = new System.Drawing.Size(134, 39);
+			this.linkLabel5.TabIndex = 4;
+			this.linkLabel5.TabStop = true;
+			this.linkLabel5.Text = "Edit Questions";
+			// 
+			// linkLabel3
+			// 
+			this.linkLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.linkLabel3.AutoSize = true;
+			this.linkLabel3.Font = new System.Drawing.Font("PMingLiU", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.linkLabel3.LinkColor = System.Drawing.Color.Black;
+			this.linkLabel3.Location = new System.Drawing.Point(1193, 0);
+			this.linkLabel3.Name = "linkLabel3";
+			this.linkLabel3.Size = new System.Drawing.Size(126, 39);
+			this.linkLabel3.TabIndex = 5;
+			this.linkLabel3.TabStop = true;
+			this.linkLabel3.Text = "Create Accounts";
+			this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+			// 
+			// linkLabel1
+			// 
+			this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.linkLabel1.AutoSize = true;
+			this.linkLabel1.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+			this.linkLabel1.Location = new System.Drawing.Point(236, 3);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new System.Drawing.Size(106, 32);
+			this.linkLabel1.TabIndex = 6;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.Text = "Setting";
+			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+			// 
+			// tableLayoutPanel1
+			// 
+			this.tableLayoutPanel1.ColumnCount = 7;
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 1, 0);
+			this.tableLayoutPanel1.Controls.Add(this.linkLabel3, 6, 0);
+			this.tableLayoutPanel1.Controls.Add(this.linkLabel5, 5, 0);
+			this.tableLayoutPanel1.Controls.Add(this.linkLabel2, 4, 0);
+			this.tableLayoutPanel1.Controls.Add(this.linkLabel4, 3, 0);
+			this.tableLayoutPanel1.Controls.Add(this.linkLabel6, 2, 0);
+			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 71);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.RowCount = 2;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.23656F));
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.76344F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1355, 85);
+			this.tableLayoutPanel1.TabIndex = 3;
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -623,14 +623,14 @@
 			this.Text = "Form2";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
 			this.Load += new System.EventHandler(this.Form2_Load);
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.tableLayoutPanel1.PerformLayout();
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tableLayoutPanel2.PerformLayout();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.QuestionInputTable.ResumeLayout(false);
 			this.QuestionInputTable.PerformLayout();
+			this.tableLayoutPanel1.ResumeLayout(false);
+			this.tableLayoutPanel1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -641,12 +641,6 @@
         private System.Windows.Forms.Label welcome;
         private System.Windows.Forms.ComboBox subject1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox text_pw2;
@@ -663,7 +657,6 @@
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem teacherReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentReportToolStripMenuItem;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.Label topic;
         private System.Windows.Forms.Label level;
@@ -685,5 +678,12 @@
 		private System.Windows.Forms.RichTextBox Remarks;
 		private System.Windows.Forms.Button QuestionInputClosebt;
 		private System.Windows.Forms.Button QuestionInputSavebt;
+		private System.Windows.Forms.LinkLabel linkLabel6;
+		private System.Windows.Forms.LinkLabel linkLabel4;
+		private System.Windows.Forms.LinkLabel linkLabel2;
+		private System.Windows.Forms.LinkLabel linkLabel5;
+		private System.Windows.Forms.LinkLabel linkLabel3;
+		private System.Windows.Forms.LinkLabel linkLabel1;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 	}
 }
