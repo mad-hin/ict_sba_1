@@ -129,14 +129,12 @@ namespace ict_sba_1
             {
                 if(MessageBox.Show("The system will not save any changes", "Confirme to close", MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    q_text.Text = "";
-                    ans_1.Text = "";
-                    ans_2.Text = "";
-                    ans_3.Text = "";
-                    ans_4.Text = "";
-                    Remarks.Text = "";
-                    QuestionInputTable.Visible = false;
+                    InputqtTableClose();
                 }
+            }
+            else
+            {
+                InputqtTableClose();
             }
         }
 
@@ -222,6 +220,17 @@ namespace ict_sba_1
             ans_4.Text = "";
             Remarks.Text = "";
             QuestionInputTable.Visible = true;
+        }
+
+        private void InputqtTableClose()
+        {
+            QuestionInputTable.Visible = false;
+            q_text.Text = "";
+            ans_1.Text = "";
+            ans_2.Text = "";
+            ans_3.Text = "";
+            ans_4.Text = "";
+            Remarks.Text = "";
         }
     }
 }
