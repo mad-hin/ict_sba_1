@@ -70,11 +70,11 @@
 			this.q_text = new System.Windows.Forms.RichTextBox();
 			this.ans_1 = new System.Windows.Forms.RichTextBox();
 			this.ans_2 = new System.Windows.Forms.RichTextBox();
-			this.ans_3 = new System.Windows.Forms.RichTextBox();
 			this.ans_4 = new System.Windows.Forms.RichTextBox();
 			this.Remarks = new System.Windows.Forms.RichTextBox();
 			this.QuestionInputClosebt = new System.Windows.Forms.Button();
 			this.QuestionInputSavebt = new System.Windows.Forms.Button();
+			this.ans_3 = new System.Windows.Forms.RichTextBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -236,7 +236,7 @@
 			this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
 			this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
 			this.tableLayoutPanel2.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(116, 693);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(107, 860);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 4;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -345,14 +345,14 @@
 			// newQuestionToolStripMenuItem
 			// 
 			this.newQuestionToolStripMenuItem.Name = "newQuestionToolStripMenuItem";
-			this.newQuestionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.newQuestionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
 			this.newQuestionToolStripMenuItem.Text = "New Question";
 			this.newQuestionToolStripMenuItem.Click += new System.EventHandler(this.newQuestionToolStripMenuItem_Click);
 			// 
 			// editQuestionToolStripMenuItem
 			// 
 			this.editQuestionToolStripMenuItem.Name = "editQuestionToolStripMenuItem";
-			this.editQuestionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.editQuestionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
 			this.editQuestionToolStripMenuItem.Text = "Edit Question";
 			// 
 			// reportToolStripMenuItem
@@ -367,13 +367,13 @@
 			// teacherReportToolStripMenuItem
 			// 
 			this.teacherReportToolStripMenuItem.Name = "teacherReportToolStripMenuItem";
-			this.teacherReportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.teacherReportToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
 			this.teacherReportToolStripMenuItem.Text = "Teacher Report";
 			// 
 			// studentReportToolStripMenuItem
 			// 
 			this.studentReportToolStripMenuItem.Name = "studentReportToolStripMenuItem";
-			this.studentReportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.studentReportToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
 			this.studentReportToolStripMenuItem.Text = "Student Report";
 			// 
 			// logoutToolStripMenuItem
@@ -562,14 +562,6 @@
 			this.ans_2.TabIndex = 16;
 			this.ans_2.Text = "";
 			// 
-			// ans_3
-			// 
-			this.ans_3.Location = new System.Drawing.Point(157, 699);
-			this.ans_3.Name = "ans_3";
-			this.ans_3.Size = new System.Drawing.Size(657, 68);
-			this.ans_3.TabIndex = 17;
-			this.ans_3.Text = "";
-			// 
 			// ans_4
 			// 
 			this.ans_4.Location = new System.Drawing.Point(157, 815);
@@ -606,6 +598,14 @@
 			this.QuestionInputSavebt.TabIndex = 21;
 			this.QuestionInputSavebt.Text = "Save";
 			this.QuestionInputSavebt.UseVisualStyleBackColor = true;
+			// 
+			// ans_3
+			// 
+			this.ans_3.Location = new System.Drawing.Point(157, 699);
+			this.ans_3.Name = "ans_3";
+			this.ans_3.Size = new System.Drawing.Size(657, 68);
+			this.ans_3.TabIndex = 17;
+			this.ans_3.Text = "";
 			// 
 			// Form2
 			// 
