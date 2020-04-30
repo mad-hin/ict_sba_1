@@ -124,10 +124,11 @@ namespace ict_sba_1
         /*confirm closing the new question input table*/
         private void QuestionInputClosebt_Click(object sender, EventArgs e)
         {
-            if(!(String.IsNullOrEmpty(q_text.Text)|| String.IsNullOrEmpty(ans_1.Text) || String.IsNullOrEmpty(ans_2.Text) 
-                || String.IsNullOrEmpty(ans_3.Text) || String.IsNullOrEmpty(ans_4.Text) || String.IsNullOrEmpty(Remarks.Text)))
+            if (!(string.IsNullOrEmpty(q_text.Text) && string.IsNullOrEmpty(ans_1.Text) && string.IsNullOrEmpty(ans_2.Text)
+                && string.IsNullOrEmpty(ans_3.Text) && string.IsNullOrEmpty(ans_4.Text) && string.IsNullOrEmpty(Remarks.Text)
+                && (!(answer_1.Checked || answer_2.Checked || answer_3.Checked || answer_4.Checked))))
             {
-                if(MessageBox.Show("The system will not save any changes", "Confirme to close", MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                if (MessageBox.Show("The system will not save any changes", "Confirme to close", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     InputqtTableClose();
                 }
@@ -192,7 +193,7 @@ namespace ict_sba_1
             }
 
         }
-        
+
         private void InitInputqtTable()
         {
             tableLayoutPanel2.Visible = false;
@@ -213,24 +214,32 @@ namespace ict_sba_1
             ans_4.Height = height;
             Remarks.Width = width;
             Remarks.Height = height;
-            q_text.Text = "";
-            ans_1.Text = "";
-            ans_2.Text = "";
-            ans_3.Text = "";
-            ans_4.Text = "";
-            Remarks.Text = "";
+            q_text.Text = null;
+            ans_1.Text = null;
+            ans_2.Text = null;
+            ans_3.Text = null;
+            ans_4.Text = null;
+            Remarks.Text = null;
+            answer_1.Checked = false;
+            answer_2.Checked = false;
+            answer_3.Checked = false; 
+            answer_4.Checked = false;
             QuestionInputTable.Visible = true;
         }
 
         private void InputqtTableClose()
         {
             QuestionInputTable.Visible = false;
-            q_text.Text = "";
-            ans_1.Text = "";
-            ans_2.Text = "";
-            ans_3.Text = "";
-            ans_4.Text = "";
-            Remarks.Text = "";
+            q_text.Text = null;
+            ans_1.Text = null;
+            ans_2.Text = null;
+            ans_3.Text = null;
+            ans_4.Text = null;
+            Remarks.Text = null;
+            answer_1.Checked = false;
+            answer_2.Checked = false;
+            answer_3.Checked = false;
+            answer_4.Checked = false;
         }
     }
 }
